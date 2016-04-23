@@ -1,0 +1,101 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.shy.app</groupId>
+  <artifactId>websocket</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>websocket Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+    <dependency>
+	<groupId>mysql</groupId>
+	<artifactId>mysql-connector-java</artifactId>
+	<version>5.1.38</version>
+</dependency>
+
+    
+    <dependency>
+		<groupId>org.json</groupId>
+		<artifactId>json</artifactId>
+		<version>20160212</version>
+	</dependency>
+    
+    <dependency>
+		<groupId>org.eclipse.jetty.websocket</groupId>
+		<artifactId>websocket-servlet</artifactId>
+		<version>9.3.8.v20160314</version>
+	</dependency>
+    
+    <dependency>
+		<groupId>org.eclipse.jetty</groupId>
+		<artifactId>jetty-server</artifactId>
+		<version>9.3.8.v20160314</version>
+	</dependency>
+    
+    <dependency>
+		<groupId>org.eclipse.jetty.websocket</groupId>
+		<artifactId>websocket-server</artifactId>
+		<version>9.3.8.v20160314</version>
+	</dependency>
+    
+    
+    <dependency>
+		<groupId>javax.servlet</groupId>
+		<artifactId>javax.servlet-api</artifactId>
+		<version>3.1.0</version>
+	</dependency>
+    
+    <dependency>
+		<groupId>javax.websocket</groupId>
+		<artifactId>javax.websocket-api</artifactId>
+		<version>1.1</version>
+		<scope>provided</scope>
+	</dependency>
+    
+    <dependency>
+		<groupId>javax.enterprise</groupId>
+		<artifactId>cdi-api</artifactId>
+		<version>2.0-EDR1</version>
+	</dependency>
+    
+    <dependency>
+		<groupId>javax</groupId>
+		<artifactId>javaee-api</artifactId>
+		<version>7.0</version>
+	</dependency>
+    
+    
+  </dependencies>
+  <build>
+    <finalName>websocket</finalName>
+  	<plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+		    <artifactId>maven-compiler-plugin</artifactId>
+		    <configuration>
+		    	<compilerVersion>1.8</compilerVersion>
+		    	<source>1.8</source>
+		    	<target>1.8</target>
+		    </configuration>
+		</plugin>
+		
+		<plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>2.6</version>
+            <configuration>
+                <failOnMissingWebXml>false</failOnMissingWebXml>
+            </configuration>
+        </plugin>
+		
+	</plugins>
+  </build>
+</project>

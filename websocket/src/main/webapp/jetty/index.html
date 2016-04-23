@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://code.jquery.com/jquery-1.12.3.min.js"   
+			integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="   
+			crossorigin="anonymous">
+		</script>
+	</head>
+    <body>
+        <h1>WebSocket test</h1>
+        <script src="index.js"></script>
+        
+        <form id="wsForm" name="wsForm">
+        	<input type="text" name="name" id="item-name"/>
+        	<input type="text" name="description" id="item-description"/>
+        	<!-- <input type="hidden" name=""/> -->
+	        <button id="add-item-btn">Add item</button>
+        </form>
+        
+        
+        <table id="item-table">
+        	<thead>
+        		<th>ID</th>
+        		<th>Name</th>
+        		<th>Description</th>
+        	</thead>
+        	<tbody></tbody>
+        </table>
+        
+        
+    </body>
+</html>
